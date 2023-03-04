@@ -1,5 +1,10 @@
-<script>
-	let linkData = [
+<script lang="ts">
+	interface Link {
+		link: string;
+		text: string;
+	}
+
+	let links: Link[] = [
 		{
 			link: 'bit.ly/SolCha23_RegForm',
 			text: 'Register now!'
@@ -32,7 +37,7 @@
 		build a better tomorrow.
 	</p>
 	<div class="mx-auto flex gap-5">
-		{#each linkData as { link, text }}
+		{#each links as { link, text }}
 			<a
 				href={link}
 				class="rounded-md bg-[#7b1113] px-4 py-1 text-lg text-white transition-all hover:scale-110"

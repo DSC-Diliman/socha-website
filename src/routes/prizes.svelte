@@ -1,5 +1,11 @@
-<script>
-	const awards = [
+<script lang="ts">
+	interface Award {
+		prize: string;
+		award: string;
+		color: string;
+	}
+
+	const awards: Award[] = [
 		{
 			prize: 'PHP 10,000',
 			award: '1ST RUNNER UP',

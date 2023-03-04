@@ -1,11 +1,24 @@
-<script>
+<script lang="ts">
+	interface Subsection {
+		subtitle: string;
+		submarks: string;
+		criteria: string[];
+	}
+
+	interface Section {
+		title: string;
+		marks: string;
+		subsections: Subsection[];
+	}
+
 	let additionalRules = [
 		'Please upload your documents in GitHub',
 		'Provide instructions on how to run, compile, and execute your projects.',
 		'Add dscdiliman@gmail.com as a collaborator.',
 		'If you have any inquiries, please message Zoe Huertas or Kurt Lanting, or any of the organizers.'
 	];
-	let scoring = [
+
+	let scoring: Section[] = [
 		{
 			title: 'Innovation Proposal (Idea)',
 			marks: '50%',

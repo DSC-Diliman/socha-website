@@ -1,5 +1,13 @@
-<script>
-	let events = [
+<script lang="ts">
+	interface Event {
+		duration: string;
+		event: string;
+		description: string;
+		done: boolean;
+		current: boolean;
+	}
+
+	let events: Event[] = [
 		{
 			duration: 'February 18 – March 5',
 			event: 'REGISTRATION PERIOD',

@@ -1,7 +1,17 @@
-<script>
+<script lang="ts">
 	import Accordion from '../lib/accordion.svelte';
 
-	let faq = [
+	interface Question {
+		q: string;
+		a: string;
+	}
+
+	interface Section {
+		section: string;
+		questions: Question[];
+	}
+
+	let faq: Section[] = [
 		{
 			section: 'General',
 			questions: [

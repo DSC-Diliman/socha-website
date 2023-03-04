@@ -1,5 +1,10 @@
-<script>
-	let links = [
+<script lang="ts">
+	interface Link {
+		id: string;
+		name: string;
+	}
+
+	let links: Link[] = [
 		{
 			id: 'landing',
 			name: 'Top'
