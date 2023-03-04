@@ -11,7 +11,7 @@
 	];
 </script>
 
-<section class="flex flex-col gap-10 px-8 py-16" id="landing">
+<section class="flex min-h-screen flex-col gap-10 px-8 py-24" id="landing">
 	<h1 class="text-center text-5xl font-bold italic sm:text-7xl">
 		<p
 			class="bg-gradient-to-r from-purple-500 to-orange-500 bg-clip-text px-3 font-extrabold text-transparent"
