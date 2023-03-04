@@ -39,10 +39,12 @@
 	];
 </script>
 
-<nav class="sticky top-0 flex w-full justify-center gap-2 bg-white">
+<nav
+	class="sticky top-0 grid w-full grid-cols-3 grid-rows-3 justify-items-center gap-2 bg-white py-3 sm:flex sm:justify-center"
+>
 	{#each links as { id, name }}
 		<div>
-			<a href="/#{id}">{name}</a>
+			<a href="/#{id}" class="rounded-md py-1 px-3 hover:bg-black hover:text-white">{name}</a>
 		</div>
 	{/each}
 </nav>
