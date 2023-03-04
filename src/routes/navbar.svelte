@@ -39,7 +39,7 @@
 	];
 </script>
 
-<nav class="sticky top-0 bg-white flex w-full justify-center gap-2">
+<nav class="sticky top-0 flex w-full justify-center gap-2 bg-white">
 	{#each links as { id, name }}
 		<div>
 			<a href="/#{id}">{name}</a>
