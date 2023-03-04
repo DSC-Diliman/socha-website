@@ -29,8 +29,8 @@
 			name: 'Mentors'
 		},
 		{
-			id: 'sponsors',
-			name: 'Sponsors'
+			id: 'credits',
+			name: 'Credits'
 		},
 		{
 			id: 'faq',

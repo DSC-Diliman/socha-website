@@ -5,7 +5,7 @@
 	import Landing from './landing.svelte';
 	import Prizes from './prizes.svelte';
 	import Rules from './rules.svelte';
-	import Sponsors from './sponsors.svelte';
+	import Credits from './credits.svelte';
 	import Timeline from './timeline.svelte';
 	import Faq from './faq.svelte';
 	import Footer from './footer.svelte';
@@ -18,6 +18,6 @@
 <Prizes />
 <Speakers />
 <Mentors />
-<Sponsors />
+<Credits />
 <Faq />
 <Footer />
