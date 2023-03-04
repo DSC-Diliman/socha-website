@@ -11,11 +11,13 @@
 		subsections: Subsection[];
 	}
 
+	let colors = ['bg-red-500', 'bg-yellow-500', 'bg-emerald-500'];
+
 	let additionalRules = [
-		'Please upload your documents in GitHub',
+		'Please upload your documents in GitHub.',
 		'Provide instructions on how to run, compile, and execute your projects.',
 		'Add dscdiliman@gmail.com as a collaborator.',
-		'If you have any inquiries, please message Zoe Huertas or Kurt Lanting, or any of the organizers.'
+		'If you have any inquiries, please message Zoe Huertas, Kurt Lanting, or any of the organizers.'
 	];
 
 	let scoring: Section[] = [
@@ -83,7 +85,7 @@
 				},
 				{
 					subtitle: 'User Experience',
-					submarks: '4.5%',
+					submarks: '4½%',
 					criteria: [
 						'Considers the experience of users in terms of usability and interface (With backed data to support claims).',
 						'Prototype is easy to understand, use, and follow.',
@@ -92,9 +94,9 @@
 				},
 				{
 					subtitle: 'Google Technology',
-					submarks: '10.5%',
+					submarks: '10½%',
 					criteria: [
-						'While the Coded solution is not required, a 10% allotment will be given to teams who provide coded solutions.',
+						'While the Coded solution is not required, a 3% allotment will be given to teams who provide coded solutions.',
 						'Comprehensively discuss how Google Technology is used and how it is utilized.',
 						'The usage of Google Technology can be seen in the Prototype itself.'
 					]
@@ -155,36 +157,58 @@
 	];
 </script>
 
-<h1 id="rules">Rules</h1>
+<section class="py-20 px-8" id="rules">
+	<h1 class="mb-10 text-center text-6xl font-bold">Rules</h1>
 
-<h2>Eligibility</h2>
-<p>
-	This competition is open to individuals or teams of university students regardless of academic
-	background. A team may have a maximum of 4 members.
-</p>
+	<div class="sm:mx-12 lg:mx-24">
+		<h2 class="mb-5 text-4xl">Eligibility</h2>
+		<p class="mb-10">
+			This competition is open to individuals or teams of university students regardless of academic
+			background. A team may have a maximum of 4 members.
+		</p>
 
-<h2>Scoring</h2>
-{#each scoring as { title, marks, subsections }}
-	<div>
-		<h3>{title}</h3>
-		<p>{marks}</p>
-		{#each subsections as { subtitle, submarks, criteria }}
-			<h4>{subtitle}</h4>
-			<p>{submarks}</p>
-			<ul>
-				{#each criteria as criterion}
-					<li>{criterion}</li>
-				{/each}
-			</ul>
-		{/each}
+		<h2 class="mb-5 text-4xl">Scoring</h2>
+		<div class="mb-10">
+			{#each scoring as { title, marks, subsections }, index}
+				<div class="mb-10">
+					<div class="flex items-center gap-3">
+						<p
+							class="flex h-12 w-12 items-center justify-center rounded-full font-bold {colors[
+								index
+							]} text-white"
+						>
+							{marks}
+						</p>
+						<h3>{title}</h3>
+					</div>
+					{#each subsections as { subtitle, submarks, criteria }}
+						<div class="my-6">
+							<div class="ml-12 flex items-center gap-3">
+								<p
+									class="flex h-12 w-12 items-center justify-center rounded-full bg-[#7b1113] text-white"
+								>
+									{submarks}
+								</p>
+								<h4>{subtitle}</h4>
+							</div>
+							<ul class="ml-28 my-3 list-disc">
+								{#each criteria as criterion}
+									<li>{criterion}</li>
+								{/each}
+							</ul>
+						</div>
+					{/each}
+				</div>
+			{/each}
+		</div>
+
+		<h2 class="mb-5 text-4xl">Additional Rules</h2>
+		<ul class="list-disc">
+			{#each additionalRules as additionalRule}
+				<li class="ml-5">{additionalRule}</li>
+			{/each}
+		</ul>
 	</div>
-{/each}
-
-<h2>Additional Rules</h2>
-<ul>
-	{#each additionalRules as additionalRule}
-		<li>{additionalRule}</li>
-	{/each}
-</ul>
+</section>
 
 <style lang="postcss"></style>
