@@ -1,5 +1,7 @@
 # `socha-website`
 
+[Primer](https://drive.google.com/file/d/1Xexs113zeCnsOhGJsx63EZhgn98S6osZ/view) | [Mechanics](https://docs.google.com/document/d/19OktX0Iwx6bZ1ZkWLXTJuJktTjp9OH7jGtv6zUnCxbc/edit)
+
 GDSC-UPD Solutions Challenge 2023 website ~~any% speedrun~~.
 
 ## Stack
