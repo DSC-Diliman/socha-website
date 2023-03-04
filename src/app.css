@@ -16,6 +16,15 @@
 	margin: 0;
 }
 
+@font-face {
+	font-family: 'Google';
+	src: url('./fonts/GoogleSans-Regular.woff');
+}
+
+* {
+	font-family: 'Google';
+}
+
 /*
   3. Allow percentage-based heights in the application
 */
