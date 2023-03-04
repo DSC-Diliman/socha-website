@@ -41,7 +41,9 @@
 
 <nav>
 	{#each links as { id, name }}
-		<a href="/#{id}">{name}</a>
+		<div>
+			<a href="/#{id}">{name}</a>
+		</div>
 	{/each}
 </nav>
 
@@ -50,5 +52,9 @@
 		position: sticky;
 		top: 0px;
 		background-color: white;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		gap: 2em;
 	}
 </style>
