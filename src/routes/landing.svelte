@@ -11,7 +11,7 @@
 	];
 </script>
 
-<h1>DSC UPD Solutions Challenge</h1>
+<h1 id="landing">DSC UPD Solutions Challenge</h1>
 <p>
 	The Diliman Solutions Challenge is the flagship event of the Google Developer Student Clubs UP
 	Diliman. This event seeks to call all students to ideate, innovate, and integrate relevant and

@@ -38,7 +38,7 @@
 	];
 </script>
 
-<h1>Timeline</h1>
+<h1 id="timeline">Timeline</h1>
 {#each events as { duration, event, description }}
 	<p>{duration}</p>
 	<h2>{event}</h2>

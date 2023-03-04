@@ -142,7 +142,7 @@
 	];
 </script>
 
-<h1>Rules</h1>
+<h1 id="rules">Rules</h1>
 
 <h2>Eligibility</h2>
 <p>

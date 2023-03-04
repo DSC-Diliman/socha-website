@@ -1,4 +1,4 @@
-<h1>Our Challenge</h1>
+<h1 id="description">Our Challenge</h1>
 <h2>Ideate.</h2>
 <h2>Innovate.</h2>
 <h2>Integrate.</h2>
