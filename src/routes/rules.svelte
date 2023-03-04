@@ -173,3 +173,5 @@
 		<li>{additionalRule}</li>
 	{/each}
 </ul>
+
+<style lang="postcss"></style>

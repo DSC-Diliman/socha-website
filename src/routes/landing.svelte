@@ -22,3 +22,5 @@
 {#each linkData as { link, text }}
 	<a href={link}>{text}</a>
 {/each}
+
+<style lang="postcss"></style>

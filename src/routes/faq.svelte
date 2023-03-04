@@ -132,3 +132,5 @@
 		<div>{a}</div>
 	{/each}
 {/each}
+
+<style lang="postcss"></style>

@@ -21,3 +21,5 @@
 <Credits />
 <Faq />
 <Footer />
+
+<style lang="postcss"></style>

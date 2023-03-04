@@ -44,3 +44,5 @@
 	<h2>{event}</h2>
 	<p>{description}</p>
 {/each}
+
+<style lang="postcss"></style>

@@ -6,3 +6,5 @@
 	</div>
 	<p>© DSC UP Diliman 2023. All Rights Reserved.</p>
 </footer>
+
+<style lang="postcss"></style>

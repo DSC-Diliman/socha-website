@@ -9,3 +9,5 @@
 <p>BEST INNOVATION PROPOSAL</p>
 <p>EXCLUSIVE EVENT FROM ACCENTURE</p>
 <p>CERTIFICATE OF PARTICIPATION</p>
+
+<style lang="postcss"></style>
