@@ -39,7 +39,7 @@
 	];
 </script>
 
-<nav>
+<nav class="sticky top-0 bg-white flex w-full justify-center gap-2">
 	{#each links as { id, name }}
 		<div>
 			<a href="/#{id}">{name}</a>
@@ -47,14 +47,4 @@
 	{/each}
 </nav>
 
-<style>
-	nav {
-		position: sticky;
-		top: 0px;
-		background-color: white;
-		display: flex;
-		width: 100%;
-		justify-content: center;
-		gap: 2em;
-	}
-</style>
+<style lang="postcss"></style>
