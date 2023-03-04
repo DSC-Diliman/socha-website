@@ -1,4 +1,6 @@
 <script>
+	import Accordion from '../lib/accordion.svelte';
+
 	let faq = [
 		{
 			section: 'General',
@@ -124,13 +126,18 @@
 	];
 </script>
 
-<h1 id="faq">Frequently Asked Questions</h1>
-{#each faq as { section, questions }}
-	<h2>{section}</h2>
-	{#each questions as { q, a }}
-		<h3>{q}</h3>
-		<div>{a}</div>
-	{/each}
-{/each}
+<section class="py-20 px-8" id="faq">
+	<h1 class="mb-10 text-center text-6xl font-bold">Frequently Asked Questions</h1>
+	<div class="flex flex-col gap-10 sm:mx-12 lg:mx-24">
+		{#each faq as { section, questions }}
+			<div>
+				<h2 class="mb-3 text-4xl">{section}</h2>
+				{#each questions as { q, a }}
+					<Accordion question={q} answer={a} />
+				{/each}
+			</div>
+		{/each}
+	</div>
+</section>
 
 <style lang="postcss"></style>
