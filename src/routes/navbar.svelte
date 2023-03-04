@@ -40,7 +40,7 @@
 </script>
 
 <nav
-	class="sticky top-0 grid w-full grid-cols-3 grid-rows-3 justify-items-center gap-2 bg-white py-3 sm:flex sm:justify-center"
+	class="sticky top-0 grid w-full grid-cols-3 grid-rows-3 justify-items-center gap-3 bg-white py-3 drop-shadow-md sm:flex sm:justify-center"
 >
 	{#each links as { id, name }}
 		<div>
