@@ -69,7 +69,7 @@
 						? 'visible'
 						: 'hidden'} absolute top-3 right-3 rounded-full bg-[#7b1113] px-4 py-0.5 text-white"
 				>
-					Current
+					Ongoing
 				</div>
 			</div>
 		{/each}
